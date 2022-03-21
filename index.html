@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AJAX 2</title>
+</head>
+<body>
+	<h1>AJAX</h1>
+
+	Busqueda en DB:
+	<form>
+		<input type="search" id="search">
+		<button type="submit">Search</button>
+	</form>
+
+	<br>
+	<div id="container" style="background-color: #a4d8d8; height: 70px; width: 90%;"></div>
+
+	<hr><br>
+
+	Ingresar nuevo registro en DB:
+	<form id="tarea-form">
+		<input type="hidden" id="taskId">
+		<input type="text" id="nombre" autocomplete="off">
+		<input type="text" id="descrip" autocomplete="off">
+		<button type="submit">Enviar</button>
+	</form>
+
+	<br><hr><br>
+
+	Listar todos los elementos:<br><br>
+	<table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tbody id="tasks"></tbody>
+    </table>
+
+    <br><hr><br>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<script>
+		$(function(){
+			console.log("TEST 03");	
+
+		});
+
+	</script>
+</body>
+</html>
